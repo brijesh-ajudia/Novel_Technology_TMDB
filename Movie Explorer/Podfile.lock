@@ -1,0 +1,33 @@
+PODS:
+  - Alamofire (5.9.1)
+  - Moya (15.0.0):
+    - Moya/Core (= 15.0.0)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
+  - SDWebImage (5.19.7):
+    - SDWebImage/Core (= 5.19.7)
+  - SDWebImage/Core (5.19.7)
+  - Toast-Swift (5.1.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.6)
+  - Moya (~> 15.0)
+  - SDWebImage (~> 5.15)
+  - Toast-Swift (~> 5.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Moya
+    - SDWebImage
+    - Toast-Swift
+
+SPEC CHECKSUMS:
+  Alamofire: f36a35757af4587d8e4f4bfa223ad10be2422b8c
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  SDWebImage: 8a6b7b160b4d710e2a22b6900e25301075c34cb3
+  Toast-Swift: 7a03a532afe3a560d4044bc7c237e2864d295173
+
+PODFILE CHECKSUM: b90d3a546a716ccff1020abf607e0c82c28b29d0
+
+COCOAPODS: 1.16.2

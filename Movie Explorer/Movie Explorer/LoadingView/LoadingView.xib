@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LoadingView" customModule="Movie_Explorer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Xz-vh-zuv">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UOv-Dn-Nmn">
+                            <rect key="frame" x="166.66666666666666" y="396" width="60" height="60"/>
+                            <subviews>
+                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Fpo-K3-OMz">
+                                    <rect key="frame" x="11.333333333333343" y="11.666666666666686" width="37" height="37"/>
+                                    <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </activityIndicatorView>
+                            </subviews>
+                            <color key="backgroundColor" red="0.070588235294117646" green="0.070588235294117646" blue="0.070588235294117646" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="UOv-Dn-Nmn" secondAttribute="height" multiplier="1:1" id="7qX-FH-KSw"/>
+                                <constraint firstAttribute="height" constant="60" id="hNa-GO-OxD"/>
+                                <constraint firstItem="Fpo-K3-OMz" firstAttribute="centerX" secondItem="UOv-Dn-Nmn" secondAttribute="centerX" id="oah-fw-Kgo"/>
+                                <constraint firstItem="Fpo-K3-OMz" firstAttribute="centerY" secondItem="UOv-Dn-Nmn" secondAttribute="centerY" id="pLz-r9-2um"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="0.54000000000000004" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="UOv-Dn-Nmn" firstAttribute="centerY" secondItem="7Xz-vh-zuv" secondAttribute="centerY" id="68e-ny-PDK"/>
+                        <constraint firstItem="UOv-Dn-Nmn" firstAttribute="centerY" secondItem="7Xz-vh-zuv" secondAttribute="centerY" id="fQd-WU-k9U"/>
+                        <constraint firstItem="UOv-Dn-Nmn" firstAttribute="centerX" secondItem="7Xz-vh-zuv" secondAttribute="centerX" id="sK2-mq-gb3"/>
+                        <constraint firstItem="UOv-Dn-Nmn" firstAttribute="centerX" secondItem="7Xz-vh-zuv" secondAttribute="centerX" id="vp2-Xr-2Eu"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="7Xz-vh-zuv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="IYf-m8-yqe"/>
+                <constraint firstItem="7Xz-vh-zuv" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="RPy-SV-lGS"/>
+                <constraint firstItem="7Xz-vh-zuv" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="cKt-sc-37f"/>
+                <constraint firstAttribute="bottom" secondItem="7Xz-vh-zuv" secondAttribute="bottom" id="hK2-Dh-m8O"/>
+            </constraints>
+            <connections>
+                <outlet property="indicator" destination="Fpo-K3-OMz" id="hFY-oJ-Qd2"/>
+            </connections>
+            <point key="canvasLocation" x="-118" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
