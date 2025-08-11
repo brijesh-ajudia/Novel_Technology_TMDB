@@ -90,7 +90,7 @@ final class MovieListViewModel: NSObject {
                 case .success(let resp):
                     self.currentPage = resp.page
                     self.totalPages = resp.total_pages
-                    try? self.fetchedResultsController.performFetch() // ✅ Force update
+                    try? self.fetchedResultsController.performFetch() // Force update
                 case .failure(let err):
                     self.delegate?.didFail(with: err)
                 }
@@ -135,7 +135,7 @@ final class MovieListViewModel: NSObject {
                 case .success(let resp):
                     self.currentPage = resp.page
                     self.totalPages = resp.total_pages
-                    try? self.fetchedResultsController.performFetch() // ✅ Force update
+                    try? self.fetchedResultsController.performFetch() // Force update
                 case .failure(let err):
                     self.delegate?.didFail(with: err)
                 }
